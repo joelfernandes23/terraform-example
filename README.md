@@ -75,7 +75,7 @@ ls -A
 ```
 The .terraform directory stores the downloaded AWS provider plugin in .terraform/plugins/linux_arm64/:
 
-##Creating an AWS Resource with Terraform
+## Creating an AWS Resource with Terraform
 
 The AWS Terraform provider allows you to manage resources in AWS. You can create resources provided by a provider by adding resource blocks to Terraform configuration files. The syntax of a resource block resembles the following:
 ```resource "resource_type" "identifier" {
