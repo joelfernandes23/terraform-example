@@ -8,7 +8,7 @@ This file contains an example on how to install Terraform on Linux and create an
 3. <a href="#configuring-providers-in-terraform">Configuring Providers in Terraform</a>
 4. <a href="#creating-an-aws-resource-with-terraform">Creating an AWS Resource with Terraform</a>
 
-##Introduction
+## Introduction
 
 Terraform is an open source project maintained by HashiCorp for building, changing, and combining infrastructure safely and efficiently. Some of the benefits of using Terraform to provision and manage infrastructure include:
 •	Version-controlled infrastructure as code
@@ -19,7 +19,7 @@ HashiCorp also provides enterprise versions of Terraform that provide additional
 
 Terraform allows you to safely manage infrastructure by modifying configuration files. Terraform will show you an execution plan that you must approve before any infrastructure changes are applied. This file highlights several capabilities of Terraform that make managing infrastructure easy. 
 
-##Installation
+## Installation
 1. Download a release package <a href=https://www.terraform.io/downloads.html> here</a>.
 ```
 https://releases.hashicorp.com/terraform/0.13.5/terraform_0.13.5_linux_arm64.zip
@@ -37,7 +37,7 @@ rm terraform_0.13.5_linux_arm64.zip
 terraform version
 ```
 
-##Configuring Providers in Terraform
+## Configuring Providers in Terraform
 
 Terraform uses a plugin architecture to manage all of the resource providers that it supports. No providers are included when you first install Terraform. You declare which providers you need to use in a configuration file. Terraform configuration files have a .tf file extension. The configuration is written using HashiCorp Configuration Language (HCL). HCL attempts to strike a balance between human- and machine-readability. JavaScript Object Notation (JSON) can also be used but is discouraged because it is less human-readable and doesn't support commenting.
 Terraform includes an initialization command that reads the providers in a configuration and downloads the appropriate provider plugin. 
